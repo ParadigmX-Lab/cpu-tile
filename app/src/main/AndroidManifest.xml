@@ -5,7 +5,7 @@
 
     <application
         android:label="CPU Tile"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@drawable/ic_tile">
 
         <service
             android:name=".CpuTileService"
