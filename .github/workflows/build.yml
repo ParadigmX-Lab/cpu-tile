@@ -21,6 +21,10 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v2
 
+      - name: Generate Gradle wrapper
+        run: |
+          gradle wrapper --gradle-version 8.1.1
+
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
