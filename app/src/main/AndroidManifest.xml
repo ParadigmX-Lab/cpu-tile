@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <application
+        android:label="CPU Tile"
+        android:icon="@mipmap/ic_launcher">
+
+        <service
+            android:name=".CpuTileService"
+            android:label="CPU Cluster"
+            android:icon="@drawable/ic_tile"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>
